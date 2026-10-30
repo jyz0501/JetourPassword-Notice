@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>捷途密码箱 · 项目暂停维护</title>
+<meta name="description" content="捷途密码箱项目已暂停维护，全新傻瓜式自动化工具已发布，扫码即可下载。">
+<style>
+    :root {
+        --brand: #2563eb;
+        --ink: #0b1220;
+        --sub: #5b6472;
+        --line: #e6e9ef;
+        --bg: #f6f8fb;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
+        background: radial-gradient(1200px 600px at 50% -10%, #e8efff 0%, var(--bg) 60%);
+        color: var(--ink);
+        font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+        line-height: 1.7;
+        -webkit-font-smoothing: antialiased;
+    }
+    .card {
+        width: 100%;
+        max-width: 560px;
+        background: #fff;
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        box-shadow: 0 18px 48px rgba(15, 23, 42, .08);
+        padding: 36px 32px 28px;
+        text-align: center;
+    }
+    .badge {
+        display: inline-block;
+        font-size: 12px;
+        letter-spacing: .08em;
+        color: var(--brand);
+        background: #eaf1ff;
+        border-radius: 999px;
+        padding: 5px 14px;
+        margin-bottom: 18px;
+    }
+    h1 { font-size: 26px; font-weight: 800; letter-spacing: -.01em; }
+    h1 span {
+        display: block;
+        margin-top: 6px;
+        font-size: 15px;
+        font-weight: 600;
+        color: var(--sub);
+    }
+    .lead {
+        margin-top: 18px;
+        font-size: 15px;
+        color: var(--sub);
+    }
+    .new {
+        margin-top: 26px;
+        padding-top: 24px;
+        border-top: 1px dashed var(--line);
+        text-align: left;
+    }
+    .new h2 {
+        font-size: 17px;
+        font-weight: 700;
+        text-align: center;
+    }
+    .new p {
+        margin-top: 10px;
+        font-size: 15px;
+        color: #39414f;
+    }
+    .new p strong { color: var(--brand); }
+    .btn {
+        display: block;
+        margin: 22px auto 0;
+        width: fit-content;
+        padding: 13px 42px;
+        border-radius: 12px;
+        background: var(--brand);
+        color: #fff;
+        font-size: 16px;
+        font-weight: 700;
+        text-decoration: none;
+        box-shadow: 0 8px 20px rgba(37, 99, 235, .28);
+        transition: transform .15s ease, box-shadow .15s ease;
+    }
+    .btn:hover { transform: translateY(-1px); box-shadow: 0 12px 26px rgba(37, 99, 235, .34); }
+    .qr { margin-top: 26px; text-align: center; }
+    .qr img {
+        width: 200px;
+        height: 200px;
+        padding: 10px;
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        background: #fff;
+    }
+    .qr-tip { margin-top: 10px; font-size: 13px; color: var(--sub); }
+    footer {
+        margin-top: 26px;
+        padding-top: 18px;
+        border-top: 1px solid var(--line);
+        font-size: 13px;
+        color: var(--sub);
+    }
+    footer a { color: var(--brand); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+    @media (max-width: 480px) {
+        .card { padding: 28px 20px 22px; border-radius: 14px; }
+        h1 { font-size: 22px; }
+        .btn { width: 100%; padding: 13px 0; }
+    }
+</style>
+</head>
+<body>
+    <main class="card">
+        <div class="badge">项目公告</div>
+        <h1>捷途密码箱<span>本项目已暂停维护</span></h1>
+        <p class="lead">
+            感谢各位车主一直以来的支持。本项目自即日起停止更新与维护，不再提供口令计算服务。
+        </p>
+
+        <section class="new">
+            <h2>全新工具已发布</h2>
+            <p>
+                我们推出了 <strong>傻瓜式自动化工具</strong>：下载即用，自动识别车型与版本，
+                一键生成口令，无需手动填写序列号，也不必再等待网页计算。
+            </p>
+            <a class="btn" href="https://tool.qianxian.tech/" target="_blank" rel="noopener">立即下载</a>
+            <div class="qr">
+                <img src="download-qr.png" alt="工具下载二维码" width="200" height="200">
+                <p class="qr-tip">扫码下载 · tool.qianxian.tech</p>
+            </div>
+        </section>
+
+        <footer>
+            使用中有问题？查看 <a href="https://manual.qianxian.tech/" target="_blank" rel="noopener">使用教程</a>
+        </footer>
+    </main>
+</body>
+</html>
